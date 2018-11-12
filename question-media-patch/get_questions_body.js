@@ -25,7 +25,7 @@ var getQuestionsBody = function () {
     if (err) {
       console.log(err);
       console.log('Error While Reading question');
-      Logger.error("File Error: " + err.toString())
+      Logger.error("File Error: " + compositeSearchResultFile + ' ' + err.toString())
       process.exit();
     }
     all_questions = JSON.parse(data);
@@ -76,12 +76,14 @@ function getQuestion(question) {
               //throw new Error(error);
             } else {
               console.log('Succesfully saved ' + quesId + '.json');
+              Logger.info('Succesfully saved ' + quesId + '.json');
               if (currentQuesIndex <= all_questions.length) {
                 getQuestion(all_questions[currentQuesIndex++]);
               } else {
                 console.log("---------- Get question failed--------");
                 all_questions = _.clone(error_questions);
                 currentQuesIndex = 0;
+                Logger.warn('get question failed: retrying...')
                 getQuestion(all_questions[currentQuesIndex++])
               }
             }

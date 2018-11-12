@@ -159,6 +159,7 @@ var fixAffectedQuestions = function () {
             } else {
               console.log(url)
               console.log(chalk.yellow('Asset Id is undefined'));
+              Logger.info('Asset Id is undefined')
               questionMedia.push({
                 "id": Math.floor(Math.random() * 1000000000),
                 "src": url,

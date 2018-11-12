@@ -16,7 +16,7 @@ let currentQuesIndex = 0;
 const questionDirective = CONSTANTS.dir.allQuestions;
 var error_questions = [];
 
-var findAffectedQuestions = function(){
+var findAffectedQuestions = function () {
   console.log("============ Finding affected questions ============ ");
   Logger.info("============ Finding affected questions ============ ");
   fs.readdir(questionDirective, (err, files) => {
@@ -34,6 +34,7 @@ var findAffectedQuestions = function(){
           data = JSON.parse(data);
         } catch (err) {
           inValid.push(file);
+          Logger.error("Parse Error: " + err.toString());
           return;
         }
 
@@ -44,6 +45,7 @@ var findAffectedQuestions = function(){
           body = JSON.parse(assessment_item.body);
         } catch (err) {
           inValid.push(file);
+          Logger.error("Parse Error: " + err.toString());
           return;
         }
         if (!body) {
@@ -138,12 +140,12 @@ var findAffectedQuestions = function(){
               // error_questions.push(file);
             }
             console.log('Question affected: ' + assessment_item.identifier + '.json');
-            console.log( + "/" + totalQuestions);
+            console.log(+"/" + totalQuestions);
 
-            if(questionsAffected.length == totalQuestions){
+            if (questionsAffected.length == totalQuestions) {
               console.log("===================== Verification completed.. ");
               fixAffectedQuestions();
-            } 
+            }
           })
         }
 

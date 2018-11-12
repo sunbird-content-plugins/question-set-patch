@@ -37,7 +37,7 @@ request(options, function (error, response, body) {
   console.log(chalk.green('get Successful'));
   fs.writeFile(saveFileName, JSON.stringify(body.result.items), function (err, data) {
     if (err) {
-      Logger.error("File Error: " + err.toString())
+      Logger.error("File Error: " + saveFileName + ' ' + err.toString())
       throw err;
     }
     console.log(chalk.green('File Store Successfully'));
