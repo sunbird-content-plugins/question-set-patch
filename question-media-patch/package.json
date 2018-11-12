@@ -1,0 +1,17 @@
+{
+  "name": "sb-8460",
+  "version": "1.0.0",
+  "description": "",
+  "main": "8460-fix_affected_questions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
