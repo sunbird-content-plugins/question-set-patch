@@ -28,21 +28,38 @@ const assetHostPaths = [
 ]
 
 const pluginsDefaultImages = [
+    "/content-plugins/org.ekstep.questionunit-1.0/renderer/assets/audio.png",
+    "/content-plugins/org.ekstep.questionunit-1.0/renderer/assets/audio-blue.png",
+    "/content-plugins/org.ekstep.questionunit.ftb-1.0/renderer/assets/audio.png",
     "/content-plugins/org.ekstep.questionunit.ftb-1.0/renderer/assets/audio-blue.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/audio.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/audio-icon.png",
     "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/default-image.png",
-    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/default-image.png",
-    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/tick_icon.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/down-arrow.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/expand-icon.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.0/renderer/assets/zoomin.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/audio.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/audio-icon.png",
     "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/audio-icon2.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/default-image.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/down_arrow.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/down-arrow.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/expand-icon.png",
     "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/music-blue.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/tick_icon.png",
+    "/content-plugins/org.ekstep.questionunit.mcq-1.1/renderer/assets/zoomin.png",
     "/content-plugins/org.ekstep.questionunit.mtf-1.0/renderer/assets/audio.png",
+    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio1.png",
+    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio2.png",
+    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio3.png",
+    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/down_arrow.png",
     "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/shape1.png",
     "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/shape2.png",
     "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/shape3.png",
     "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/shape4.png",
-    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio1.png",
-    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio2.png",
-    "/content-plugins/org.ekstep.questionunit.mtf-1.1/renderer/assets/audio3.png",
-    "/content-plugins/org.ekstep.questionunit.reorder-1.0/renderer/assets/backspace.png"
+    "/content-plugins/org.ekstep.questionunit.reorder-1.0/renderer/assets/backspace.png",
+    "/content-plugins/org.ekstep.questionunit.sequence-1.0/renderer/assets/audio-icon.png",
+    "/content-plugins/org.ekstep.questionunit.sequence-1.0/renderer/assets/down_arrow.png"
 ];
 
 var success = 0,
@@ -78,7 +95,6 @@ function correctContents() {
     }, function(err) {
         // console.log(err);
     })
-
 }
 
 function searchContents() {
